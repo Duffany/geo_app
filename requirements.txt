@@ -2,6 +2,6 @@ folium==0.17.0
 numpy>=1.22.0  
 openrouteservice==2.3.3
 ortools==9.11.4210
-pandas==1.4.4
+pandas>=2.0.0
 streamlit==1.37.0
 streamlit_folium==0.23.0
