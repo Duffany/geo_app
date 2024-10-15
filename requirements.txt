@@ -5,3 +5,5 @@ ortools==9.11.4210
 pandas>=2.0.0
 streamlit==1.37.0
 streamlit_folium==0.23.0
+openpyxl
+
