@@ -9,5 +9,5 @@ openpyxl
 xlsxwriter
 geopandas==1.0.1
 geopy==2.4.1
-plotly @ file:///C:/ci/plotly_1658142442431/work
+plotly
 
