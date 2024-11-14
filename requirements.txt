@@ -7,3 +7,5 @@ streamlit==1.37.0
 streamlit_folium==0.23.0
 openpyxl
 xlsxwriter
+geopandas==1.0.1
+geopy==2.4.1
