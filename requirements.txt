@@ -411,6 +411,7 @@ PyHamcrest @ file:///tmp/build/80754af9/pyhamcrest_1615748656804/work
 pyinstaller==6.10.0
 pyinstaller-hooks-contrib==2024.8
 PyJWT @ file:///C:/ci/pyjwt_1657511236979/work
+pykml==0.2.0
 pylint @ file:///C:/Windows/TEMP/abs_518eqlbmoo/croots/recipe/pylint_1659110354241/work
 pyls-spyder==0.4.0
 pymc3 @ file:///home/conda/feedstock_root/build_artifacts/pymc3_1624191445829/work
