@@ -1,15 +1,6 @@
-folium==0.17.0
-numpy==1.24.4  # Ensure compatibility with Python versions >=3.7 and <3.11
-openrouteservice==2.3.3
-ortools==9.11.4210
-pandas>=2.0.0
-streamlit==1.37.0
-streamlit_folium==0.23.0
-openpyxl
-xlsxwriter
-geopandas==1.0.1
-geopy==2.4.1
-plotly
-# Remove libtk8.6 as it is not installable via pip
-
-
+streamlit==1.21.0
+pandas==1.5.0
+numpy==1.24.0
+geopandas==0.12.0
+shapely==2.0.0
+plotly==5.14.0
