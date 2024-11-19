@@ -1,5 +1,5 @@
 folium==0.17.0
-numpy>=1.22.0,<1.25  # Ensure compatibility with Python versions >=3.7 and <3.11
+numpy==1.24.4  # Ensure compatibility with Python versions >=3.7 and <3.11
 openrouteservice==2.3.3
 ortools==9.11.4210
 pandas>=2.0.0
