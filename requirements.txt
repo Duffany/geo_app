@@ -10,4 +10,6 @@ xlsxwriter
 geopandas==1.0.1
 geopy==2.4.1
 plotly
+tk>=8.6
+
 
