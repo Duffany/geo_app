@@ -19,7 +19,8 @@ from io import StringIO
 # Increase Streamlit's file size limit and add caching
 st.set_page_config(
     layout="wide", 
-    page_title="Zoning Analysis App",
+    page_title="TKD Geo-app ", 
+    page_icon="🌍",  # Emoji of a globe
     initial_sidebar_state="collapsed"
 )
 
