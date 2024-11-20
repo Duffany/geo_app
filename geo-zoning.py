@@ -585,9 +585,19 @@ def main():
 
             if st.session_state.zone_select != 'Choose any zone...' and st.session_state.num_agents_select != 'Select number of agents...':
                 try:
+                    gif_placeholder = st.empty()
                     generate_agents = st.button("Generate Agents")
                     if generate_agents:
                         with st.spinner("Generating agents..."):
+                            gif_placeholder.markdown(
+                                        """
+                                         <div style="display: flex; justify-content: center;">
+                                        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjF2YzNsd2d5aG1rYTdtaTFldjRiYWNjZ2lhOXgyNnVvMnRvcjd4eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5xuE75slgj1n3Wvxhs/giphy.gif" width="200">
+                                        </div>
+                                        """,
+                                        unsafe_allow_html=True
+                                    )
+                                    
                             zone_census_df = st.session_state.census_df[st.session_state.census_df['Zone'] == st.session_state.zone_select]
                             st.session_state.clustered_df = cluster_locations(zone_census_df, n_clusters=st.session_state.num_agents_select)
                             st.success("Clustering completed!")
@@ -618,6 +628,7 @@ def main():
                                 fig = create_agent_map_with_legend(selected_gdf, st.session_state.geojson_data, st.session_state.clustered_df, st.session_state.zone_select)
                                 if fig:
                                     st.plotly_chart(fig, use_container_width=True)
+                                gif_placeholder.empty()
                 
                 except Exception as e:
                     st.error(f"An error occurred: {str(e)}")
